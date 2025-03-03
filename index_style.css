@@ -1,0 +1,177 @@
+header{
+    height: 10%;
+    width: 99%;
+    background-color: rgba(221, 160, 221, 0.502);
+    border: 2px solid rgb(153, 60, 158);
+    border-radius: 30px;
+    padding: 0.001%;
+    margin-bottom: 150px;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/galaxy-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@keyframes navani {
+    from { background-color: rgba(0, 0, 0, 0); }
+    to { background-color: grey; }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    animation: navani 0.4s; 
+    background-color: grey;
+    border-radius: 5px;
+}
+
+
+#title{
+    text-align: center;
+    font-size: 400%;
+    
+}
+
+#subtitle{
+    text-align: center;
+    font-size: 150%;
+    
+}
+
+@keyframes anisection{
+    from {height: 300px; width: 60%; background-color: rgba(87, 42, 185, 0.373);}
+    to {height: 350px; width: 62%; background-color: rgba(153, 157, 242, 0.373);}
+}
+.section{
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 3px;
+    height: 300px;
+    width: 60%;
+    background-color:rgba(87, 42, 185, 0.373);
+    border-radius: 20px;
+}
+
+.section:hover{
+    margin: auto;
+    animation-name: anisection;
+    margin-bottom: 25px;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    height: 350px; 
+    width: 62%;
+    background-color: rgba(153, 157, 242, 0.373);
+}
+
+.section_title {
+    text-align: center; 
+    width: 100%;        
+    display: block;
+}     
+
+.section_p{
+    font-size: 22px;
+    margin-left:50px;
+    position: relative;
+    bottom: 25px;
+}
+
+.text{
+    font-size: 22px;
+    margin-left: 150px;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(76, 76, 199, 0.303);
+    margin: auto;
+    margin-top: auto; 
+}
+
+.courses {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;              
+    margin-top: 20px;
+}
+
+@keyframes animatiere{
+    from{height: 50px; width: 200px; box-shadow: 3px 3px 5px black;}
+    to{height: 65px; width: 220px; box-shadow: 6px 6px 10px black;}
+}
+.matière {
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgba(123, 159, 221, 0.852);
+    box-shadow: 3px 3px 5px black;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.matière:hover {
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgba(123, 159, 221, 0.852);
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    animation: animatiere;
+    animation-duration: 1s;
+    height: 65px;
+    width: 220px;
+    box-shadow: 6px 6px 10px black;
+}
+
+.matière p {
+    margin: 0; 
+    font-size: 18px;
+}
+
+.matière a {
+    color: white;
+    text-decoration: none;
+}
+
+.matière a:hover {
+    color: yellow;
+}
