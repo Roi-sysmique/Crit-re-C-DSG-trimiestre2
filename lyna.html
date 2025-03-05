@@ -1,28 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecon : Imparfait</title>
+    <title>Leçon : Imparfait</title>
     <link rel="stylesheet" href="lynacss.css">
 </head>
 <body>
 
-
 <div id="leçon">
-    <input type="text" placeholder="Rechercher un cours...">
-    <h2>C'est quoi l'imparfait..?</h2>
-
+    <input id="research-lecon" type="text" placeholder="Rechercher un cours...">
+    <h2 class="section-title">C'est quoi l'imparfait ?</h2>
+    <p class="text">L'imparfait est un temps du passé utilisé pour :</p>
+    <ul>
+        <li class="text"><b>Décrire</b> une situation ou un état (Il faisait froid).</li>
+        <li class="text"><b>Exprimer une habitude</b> dans le passé (Chaque été, nous allions à la plage).</li>
+        <li class="text"><b>Parler d'actions longues ou en cours</b> interrompues par une action soudaine (Je lisais quand le téléphone a sonné).</li>
+    </ul>
+    <h3 class="text">Formation :</h3>
+    <ol>
+        <li class="text">Prenez la <b>forme "nous"</b> du présent.</li>
+        <li class="text">Enlevez "-ons".</li>
+        <li class="text">Ajoutez les terminaisons :</li>
+        <ul>
+            <li class="text"><b>-ais, -ais, -ait, -ions, -iez, -aient</b></li>
+        </ul>
+    </ol>
+    <p class="text">Exemple avec <b>parler</b> :<br>
+        <ul>
+            <li>Je <b>parlais</b>, tu <b>parlais</b>, il/elle <b>parlait</b>
+        </ul>
+    </p>
+    <p class="text">⚠️ <b>Exception : être → j'étais, tu étais...</b></p>
+    <img src="img/julien_travail_dur.png" style="float: right; height: 300px; position: relative; bottom: 300px; right: 50px">
 </div>
+
 <div id="exercices">
-    <h2>exercices niveau 1</h2>
-
+    <h2 id="section_exercice"class="section-title">Exercices niveau 1</h2>
+    <p class="section_exercice">Complétez les phrases avec la bonne forme de l'imparfait :</p>
+    <ol>
+        <li class="section_exercice">Quand j'étais petit, je (jouer) _______ souvent dans le jardin.</li>
+        <li class="section_exercice">Nous (aller) _______ à la plage tous les étés.</li>
+        <li class="section_exercice">Elle (lire) _______ un livre quand le téléphone a sonné.</li>
+        <li class="section_exercice">Il (pleuvoir) _______ beaucoup en automne.</li>
+        <li class="section_exercice">Vous (faire) _______ du vélo chaque dimanche matin.</li>
+        <li class="section_exercice">Les enfants (regarder) _______ la télévision après l'école.</li>
+        <li class="section_exercice">Mon grand-père (raconter) _______ toujours des histoires fascinantes.</li>
+    </ol>
+    <img src="img/note_incroyable.png" style="float: right; height:100px; position:relative; bottom:400px; right:100px">
 </div>
+
 <div id="aide">
-    <h2>Zone d'entraide</h2>
-    <input type="text" placeholder="Ajouter une question...">
-    <button>Envoyer</button>
-
+    <h2 style="position:relative; top:20px"class="section-title">Zone d'entraide</h2>
+    <input id="question" type="text" placeholder="Ajouter une question...">
+    <button id="button">Envoyer</button>
+    <p class="text">Pose tes questions et aide les autres à comprendre l'imparfait ! ✨</p>
 </div>
+
 </body>
 </html>
